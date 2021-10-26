@@ -1,0 +1,29 @@
+.tabs {
+    @include grid(3);
+    button {
+        margin-right: $separacion / 2;
+        border-radius: 0%;
+        border: none;
+        background-color: $blanco;
+        font-size: 1.4rem;
+        font-weight: $bold;
+        padding: .8rem;
+        text-align: center;
+        text-transform: uppercase;
+        
+        &:last-of-type {
+            margin-right: $separacion / 4;
+        }
+        
+        &.actual {
+            background-color: $azul;
+            color: $blanco;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $blanco;
+            background-color: $azul;
+        }
+    }
+}
